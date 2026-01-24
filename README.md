@@ -40,37 +40,37 @@ Dataset usage is subject to the original HMS/Kaggle terms and conditions.
 
 ---
 
-## Repository Structure
-WaveEEG/
-│
-├── WaveEEG.py
-│ Main training and evaluation script implementing the WaveEEG model
-│
-├── posthoc_analysis.py
-│ Post-hoc analysis and extended visualization utilities
-│
-├── README.md
-│ Repository documentation
-│
-├── per_class_metrics.csv
-│ Per-class precision, recall, F1-score, and support
-│
-├── Figures (PNG / PDF)
-│ ├── 01_accuracy_loss_curves.*
-│ ├── 02_f1_kappa_curves.*
-│ ├── 03_confusion_matrix.*
-│ ├── 04_confusion_matrix_normalized.*
-│ ├── 05_per_class_metrics.*
-│ ├── 06_roc_curves.*
-│ ├── 07_precision_recall_curves.*
-│ ├── 07_calibration_curve.*
-│ ├── t-SNE visualizations (true labels, confidence, correctness)
-
-All figures are generated automatically by the evaluation pipeline and are suitable for direct inclusion in manuscripts or supplementary material.
-
+## Repository Structure  
+WaveEEG/  
+│  
+├── WaveEEG.py  
+│ Main training and evaluation script implementing the WaveEEG model   
+│    
+├── posthoc_analysis.py  
+│ Post-hoc analysis and extended visualization utilities  
+│    
+├── README.md    
+│ Repository documentation  
+│  
+├── per_class_metrics.csv  
+│ Per-class precision, recall, F1-score, and support    
+│   
+├── Figures (PNG / PDF)    
+│ ├── 01_accuracy_loss_curves.*   
+│ ├── 02_f1_kappa_curves.*         
+│ ├── 03_confusion_matrix.*     
+│ ├── 04_confusion_matrix_normalized.*      
+│ ├── 05_per_class_metrics.*          
+│ ├── 06_roc_curves.*           
+│ ├── 07_precision_recall_curves.*         
+│ ├── 07_calibration_curve.*            
+│ ├── t-SNE visualizations (true labels, confidence, correctness)           
+         
+All figures are generated automatically by the evaluation pipeline and are suitable for direct inclusion in manuscripts or supplementary material.    
+ 
 ---
 
-## Method Overview
+## Method Overview      
 
 WaveEEG operates on fixed-length EEG segments extracted from continuous recordings:
 
